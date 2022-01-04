@@ -1,1 +1,8 @@
-### NLW Together - Rocketseat
+# NLW Together - Rocketseat
+
+## Tecs
+
+- Express
+- Typescript
+
+
