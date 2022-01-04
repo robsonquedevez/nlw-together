@@ -2,7 +2,7 @@
 
 ## Techs and libs
 
--Node JS
+- Node JS
     - Express
     - Typescript
 - React JS
