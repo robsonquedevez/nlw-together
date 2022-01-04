@@ -1,4 +1,4 @@
-# NLW Together - Rocketseat
+# NLW Together - Rocketseat :rocket:
 
 ## Techs and libs
 
