@@ -1,8 +1,11 @@
 # NLW Together - Rocketseat
 
-## Tecs
+## Techs and libs
 
-- Express
-- Typescript
+-Node JS
+    - Express
+    - Typescript
+- React JS
+- React Native
 
 
