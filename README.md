@@ -10,13 +10,13 @@
 - React JS
 - React Native
 
-### Running
+### Running NodeJS
 
 > git clone https://github.com/robsonquedevez/nlw-together.git
 
 ##### Go to the directory
 
-> cd nlw-together
+> cd nlw-together/m-nodejs
 
 ##### Install the packages
 
