@@ -7,6 +7,7 @@
     - [Typescript](https://www.typescriptlang.org/)
     - [Typeorm](https://typeorm.io/#/)
     - [uuid](https://www.npmjs.com/package/uuid)
+    - [Express-Async-Errors](https://www.npmjs.com/package/express-async-errors)
 - React JS
 - React Native
 
