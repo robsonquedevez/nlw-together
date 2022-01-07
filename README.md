@@ -8,6 +8,9 @@
     - [Typeorm](https://typeorm.io/#/)
     - [uuid](https://www.npmjs.com/package/uuid)
     - [Express-Async-Errors](https://www.npmjs.com/package/express-async-errors)
+    - [Json_Web_Token](https://jwt.io/)
+    - [Bcryptjs](https://www.npmjs.com/package/bcryptjs)
+    - [Dotenv](https://www.npmjs.com/package/dotenv)
 - React JS
 - React Native
 
@@ -26,7 +29,8 @@ _yarn_
 > yarn install
 
 
-##### Create container with postgresql database
+##### Create container with postgresql database or other database your preferences
+_If changed database, remember driver install correct_
 
 ##### Running application in development environment
 
