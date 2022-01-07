@@ -1,8 +1,11 @@
 import 'reflect-metadata';
+import env from 'dotenv';
 import express, { Request, Response, NextFunction } from 'express'
 import 'express-async-errors';
 import "./database";
 import routes from './routes';
+
+env.config();
 
 const app = express();
 
