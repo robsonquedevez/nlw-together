@@ -35,7 +35,7 @@ class AuthenticateUserService {
             process.env.JWT_SECRET_TOKEN as string,
             {
                 subject: user.id,
-                expiresIn: '1d'
+                expiresIn: '2h'
             }
         )
 
