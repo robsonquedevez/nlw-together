@@ -11,10 +11,14 @@ export async function ensureAuthenticate (request: Request, response: Response, 
     const [, token] = auth?.split(' ');
 
     try {
-        verify(
+        const decoded  = verify(
             token, 
             process.env.JWT_SECRET_TOKEN as string
         );
+
+        const { sub } = decoded;
+
+        request.user_id = sub as string;
         
         return next();
     } catch (error) {
