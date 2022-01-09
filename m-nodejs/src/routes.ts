@@ -51,6 +51,7 @@ routes.get(
 );
 routes.get(
     '/tags',
+    ensureAuthenticate,
     listTagsController.handle
 );
 
