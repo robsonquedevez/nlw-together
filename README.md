@@ -14,6 +14,8 @@
     - [Class_Transformer](https://www.npmjs.com/package/class-transformer)
     - [Cors](https://www.npmjs.com/package/cors)
 - React JS
+    - [Typescript](https://www.typescriptlang.org/)
+    - [Firebase](https://firebase.google.com/?hl=pt)
 - React Native
 
 ## Running
@@ -58,6 +60,8 @@ _If changed database, remember driver install correct_
 _yarn_
 
 > yarn install
+
+##### Create to account Google for using Firebase
 
 ##### Running application  
 
