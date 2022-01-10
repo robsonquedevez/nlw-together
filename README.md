@@ -16,9 +16,13 @@
 - React JS
 - React Native
 
-### Running NodeJS
+## Running
+
+_Clone the repository_
 
 > git clone https://github.com/robsonquedevez/nlw-together.git
+
+### NodeJS Part
 
 ##### Go to the directory
 
@@ -42,3 +46,20 @@ _If changed database, remember driver install correct_
 
 #### Live in
 > http://localhost:3000
+
+### ReactJS Part
+
+##### Go to the directory
+
+> cd nlw-together/m-reactjs
+
+##### Install the packages
+
+_yarn_
+
+> yarn install
+
+> yarn start
+
+#### Live in
+> http://localhost:3001
