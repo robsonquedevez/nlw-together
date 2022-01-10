@@ -59,6 +59,8 @@ _yarn_
 
 > yarn install
 
+##### Running application  
+
 > yarn start
 
 #### Live in
