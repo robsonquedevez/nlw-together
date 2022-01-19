@@ -1,5 +1,5 @@
-import React, { useCallback } from "react";
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 
@@ -9,16 +9,7 @@ import googleIconImg from '../assets/images/google-icon.svg';
 
 import '../styles/auth.scss';
 
-const Home: React.FC = () => {
-    const navegate = useNavigate();
-
-    const navigateToNewRoom = useCallback(() => {
-        navegate('/roons/new');
-    }, []);
-
-
-    const signIn = useCallback(() => {}, []);
-    
+const NewRoom: React.FC = () => {   
     return (
         <div id="page-auth">
             <aside>
@@ -29,26 +20,25 @@ const Home: React.FC = () => {
             <main>
                 <div className="main-content">
                     <img src={logoImg} alt="Letmeask brand" />
-                    <button onClick={navigateToNewRoom} className="create-room">
-                        Create your room with Google
-                        <img src={googleIconImg} alt="Google brand" />
-                    </button>
-                    <div className="separator">or enter a room</div>
+                    <h2>Create new room</h2>
                     <form>
                         <input 
                             type="text" 
-                            placeholder="enter room code"
+                            placeholder="room name"
                             />
                         <Button
                             type="submit"
                             >
-                            Enter the room
+                            create room
                         </Button>
                     </form>
+                    <p>
+                        Want to join an existing room? <Link to="/">Click here</Link>
+                    </p>
                 </div>
             </main>
         </div>
     );
 }
 
-export default Home;
+export default NewRoom;
