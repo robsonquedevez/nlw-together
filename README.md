@@ -16,6 +16,8 @@
 - React JS
     - [Typescript](https://www.typescriptlang.org/)
     - [Firebase](https://firebase.google.com/?hl=pt)
+    - [SASS](https://sass-lang.com/)
+    - [Node-SASS](https://www.npmjs.com/package/node-sass)
 - React Native
 
 ## Running
