@@ -1,6 +1,7 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useContext } from "react";
 import { useNavigate } from 'react-router-dom';
 
+import { AuthContext } from '../App';
 import Button from '../components/Button';
 
 import illustrationImg from '../assets/images/illustration.svg';
@@ -11,14 +12,15 @@ import '../styles/auth.scss';
 
 const Home: React.FC = () => {
     const navegate = useNavigate();
+    const { user, signInWithGoogle } = useContext(AuthContext);
 
-    const navigateToNewRoom = useCallback(() => {
-        navegate('/roons/new');
-    }, []);
+    const handleCreateRoom = useCallback(async () => {
+       if(!user) {
+           await signInWithGoogle();
+       }
 
-
-    const signIn = useCallback(() => {}, []);
-    
+    }, [navegate]);
+   
     return (
         <div id="page-auth">
             <aside>
@@ -29,7 +31,7 @@ const Home: React.FC = () => {
             <main>
                 <div className="main-content">
                     <img src={logoImg} alt="Letmeask brand" />
-                    <button onClick={navigateToNewRoom} className="create-room">
+                    <button onClick={handleCreateRoom} className="create-room">
                         Create your room with Google
                         <img src={googleIconImg} alt="Google brand" />
                     </button>
