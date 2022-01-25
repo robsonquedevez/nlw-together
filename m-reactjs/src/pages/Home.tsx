@@ -1,7 +1,7 @@
-import React, { useCallback, useContext } from "react";
+import React, { useCallback } from "react";
 import { useNavigate } from 'react-router-dom';
 
-import { AuthContext } from '../App';
+import { useAuth } from '../hooks/useAuth';
 import Button from '../components/Button';
 
 import illustrationImg from '../assets/images/illustration.svg';
@@ -12,12 +12,14 @@ import '../styles/auth.scss';
 
 const Home: React.FC = () => {
     const navegate = useNavigate();
-    const { user, signInWithGoogle } = useContext(AuthContext);
+    const { user, signInWithGoogle } = useAuth()
 
     const handleCreateRoom = useCallback(async () => {
        if(!user) {
            await signInWithGoogle();
        }
+
+       navegate('/roons/new');
 
     }, [navegate]);
    

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { AuthContext } from "../context/AuthContext";
 
 import Button from '../components/Button';
 
@@ -8,7 +9,8 @@ import logoImg from '../assets/images/logo.svg';
 
 import '../styles/auth.scss';
 
-const NewRoom: React.FC = () => {   
+const NewRoom: React.FC = () => { 
+
     return (
         <div id="page-auth">
             <aside>
